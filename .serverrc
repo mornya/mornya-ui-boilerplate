@@ -1,0 +1,14 @@
+{
+  "hostname": "localhost",
+  "port": "3000",
+  "url": "http://localhost:3000/",
+  "defaultEntry": "src/views/index.html",
+  "proxy": [
+    {
+      "ctx": ["/api/**"],
+      "opt": {
+        "target": "http://localhost:8088"
+      }
+    }
+  ]
+}
